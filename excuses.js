@@ -19,7 +19,7 @@ console.log("I didn’t touch the remote, I was just checking if you were still 
 console.log("I wasn’t running, I was hurrying because you said 'come here' with urgency.");
 
 // Excuse 8
-console.log("I didn’t spill anything, I was testing if the cup was kid-proof like you said.");
+console.log("I didn’t spill anything, I was testing if the cup was waterproof like you said.");
 
 // Excuse 9
 console.log("I wasn’t yelling, I was projecting my voice so you could hear me over your phone call.");
