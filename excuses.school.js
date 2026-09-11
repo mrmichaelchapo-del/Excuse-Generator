@@ -87,3 +87,65 @@ console.log("I didn’t skip school, I was just trapped in a classroom that refu
 
 // Excuse 30
 console.log("I didn’t skip school, I was just experiencing the infinite school glitch.");
+// Excuse 31
+console.log("I didn’t skip school, I was just experiencing the infinite school glitch.");
+
+// Excuse 32
+console.log("I didn’t skip school, I was just stuck in a class that refused to release me into the wild.");
+
+// Excuse 33
+console.log("I didn’t skip school, I was just waiting for the bell that forgot its job.");
+
+// Excuse 34
+console.log("I didn’t skip school, I was just trapped in a lesson that turned into a whole season finale.");
+
+// Excuse 35
+console.log("I didn’t skip school, I was just in a classroom that accidentally became a time loop.");
+
+// Excuse 36
+console.log("I didn’t skip school, I was just attending school overtime like a dedicated employee.");
+
+// Excuse 37
+console.log("I didn’t skip school, I was just stuck in a hallway that had no exit cutscene.");
+
+// Excuse 38
+console.log("I didn’t skip school, I was just waiting for the teacher to stop talking since last week.");
+
+// Excuse 39
+console.log("I didn’t skip school, I was just in a class that kept adding bonus rounds.");
+
+// Excuse 40
+console.log("I didn’t skip school, I was just doing extended learning because the day wouldn’t end.");
+
+// Excuse 41
+console.log("I didn’t skip school, I was just attending the ultra‑deluxe edition of school hours.");
+
+// Excuse 42
+console.log("I didn’t skip school, I was just stuck in a lesson that had a surprise sequel.");
+
+// Excuse 43
+console.log("I didn’t skip school, I was just waiting for dismissal like it was a rare achievement unlock.");
+
+// Excuse 44
+console.log("I didn’t skip school, I was just trapped in a classroom that forgot how clocks work.");
+
+// Excuse 45
+console.log("I didn’t skip school, I was just doing the extended cut of education.");
+
+// Excuse 46
+console.log("I didn’t skip school, I was just stuck in a teacher monologue that lasted multiple eras.");
+
+// Excuse 47
+console.log("I didn’t skip school, I was just attending the after‑school program’s after‑school program.");
+
+// Excuse 48
+console.log("I didn’t skip school, I was just waiting for the bell that went missing in action.");
+
+// Excuse 49
+console.log("I didn’t skip school, I was just in a classroom that accidentally became a survival challenge.");
+
+// Excuse 50
+console.log("I didn’t skip school, I was just stuck in a lesson that refused to roll credits.");
+
+// Excuse 51
+console.log("I didn’t skip school, I was just experiencing the legendary long‑day school event.");
