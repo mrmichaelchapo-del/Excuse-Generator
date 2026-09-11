@@ -32,3 +32,35 @@ console.log("I wasn’t sneaking snacks, I was checking if I needed to eat befor
 
 // Excuse 12
 console.log("I didn’t make the noise, I was investigating the noise so you wouldn’t have to get up.");
+// Excuse 13
+console.log("I wasn’t ignoring you, I thought you were talking to your phone again.");
+
+// Excuse 14
+console.log("I didn’t forget my chores, I was giving the broom a rest day.");
+
+// Excuse 15
+console.log("I wasn’t arguing, I was clarifying my innocence respectfully.");
+
+// Excuse 16
+console.log("I didn’t leave my shoes out, I placed them where I could find them fast for school.");
+
+// Excuse 17
+console.log("I wasn’t being loud, I was making sure you knew I was still alive.");
+
+// Excuse 18
+console.log("I didn’t lose my homework, it teleported to a safer location.");
+
+// Excuse 19
+console.log("I wasn’t procrastinating, I was waiting for the perfect moment to start.");
+
+// Excuse 20
+console.log("I didn’t forget to text you back, my brain had a loading screen.");
+
+// Excuse 21
+console.log("I wasn’t avoiding chores, I was letting you finish your sentence first.");
+
+// Excuse 22
+console.log("I didn’t leave the door open, I left it ‘parent inspection ready’.");
+
+// Excuse 23
+console.log("I wasn’t talking back, my voice just slipped out with extra confidence.");
