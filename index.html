@@ -2,252 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<title>EXCUSE GENERATOR</title>
+    <title>EXCUSE GENERATOR</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .navbar {
+            background: #222;
+            padding: 12px;
+        }
+
+        .navbar a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
 <nav class="navbar">
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/addons.html">Addons 🧩</a></li>
-    <li><a href="/join.html">Log In</a></li>
-  </ul>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/addons.html">Addons 🧩</a></li>
+        <li><a href="/join.html">Log In</a></li>
+    </ul>
 </nav>
 
-<style>
-  .navbar {
-    background: #222;
-    padding: 12px;
-  }
-  .navbar a {
-    color: white;
-    margin-right: 20px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-</style>
-<style>
-body {
-  font-family: sans-serif;
-  }
-</style>
 <h1>Excuse Generator</h1>
 <p>Generate excuses for your family or for school!</p>
+
 <script>
-// Excuse 1
-console.log("I didn't sneak the phone, My brother snuck it in my room.");
+// ---------------- FAMILY EXCUSES ----------------
+const familyExcuses = [
+    "I didn't sneak the phone, my brother snuck it in my room.",
+    "Mom, that was the monster downstairs. That wasn't me.",
+    "That wasn't me, that was a deer in the house.",
+    "That was my computer malfunctioning, not me.",
+    "I wasn’t up late, I was waiting for you to say 'bedtime' a second time.",
+    "I didn’t touch the remote, I was just checking if you were still watching.",
+    "I wasn’t running, I was hurrying because you said 'come here' with urgency.",
+    "I didn’t spill anything, I was testing if the cup was waterproof like you said.",
+    "I wasn’t yelling, I was projecting my voice so you could hear me over your phone call.",
+    "I didn’t leave the lights on, I left them for safety because you always say 'don’t trip'.",
+    "I wasn’t sneaking snacks, I was checking if I needed to eat before dinner like you always ask me.",
+    "I didn’t make the noise, I was investigating the noise so you wouldn’t have to get up.",
+    "I wasn’t ignoring you, I thought you were talking to your phone again.",
+    "I didn’t forget my chores, I was giving the broom a rest day.",
+    "I wasn’t arguing, I was clarifying my innocence respectfully.",
+    "I didn’t leave my shoes out, I placed them where I could find them fast for school.",
+    "I wasn’t being loud, I was making sure you knew I was still alive.",
+    "I didn’t lose my homework, it teleported to a safer location.",
+    "I wasn’t procrastinating, I was waiting for the perfect moment to start.",
+    "I didn’t forget to text you back, my brain had a loading screen.",
+    "I wasn’t avoiding chores, I was letting you finish your sentence first.",
+    "I didn’t leave the door open, I left it ‘parent inspection ready’.",
+    "I wasn’t talking back, my voice just slipped out with extra confidence."
+];
 
-// Excuse 2
-console.log("Mom, that was the monster downstairs. That wasn't me.");
+// ---------------- SCHOOL EXCUSES ----------------
+const schoolExcuses = [
+    "I didn’t skip school, I was just at school for so long it felt like a second home.",
+    "I didn’t skip school, I was just stuck in class until time forgot about me.",
+    "I didn’t skip school, I was just in the building so long the teachers thought I worked there.",
+    "I didn’t skip school, I was just trapped in a never‑ending lesson loop.",
+    "I didn’t skip school, I was just waiting for the final bell that never came.",
+    "I didn’t skip school, I was just attending bonus school hours nobody told me about.",
+    "I didn’t skip school, I was just walking the halls until the halls got tired of me.",
+    "I didn’t skip school, I was just stuck in a class that refused to end.",
+    "I didn’t skip school, I was just doing extended learning against my will.",
+    "I didn’t skip school, I was just waiting for a teacher who said ‘one more minute’ 47 times.",
+    "I didn’t skip school, I was just in a meeting with the clock because it wasn’t moving.",
+    "I didn’t skip school, I was just completing overtime education hours.",
+    "I didn’t skip school, I was just stuck in the cafeteria time‑warp zone.",
+    "I didn’t skip school, I was just waiting for dismissal like it was a rare event.",
+    "I didn’t skip school, I was just in a class that turned into a trilogy.",
+    "I didn’t skip school, I was just doing extra school because the day wouldn’t end.",
+    "I didn’t skip school, I was just trapped in a lesson that had DLC content.",
+    "I didn’t skip school, I was just stuck in a hallway side quest.",
+    "I didn’t skip school, I was just waiting for the teacher to stop talking since yesterday.",
+    "I didn’t skip school, I was just in a class that accidentally became a sleepover.",
+    "I didn’t skip school, I was just attending the extended edition of school.",
+    "I didn’t skip school, I was just stuck in a lesson that refused to end credits.",
+    "I didn’t skip school, I was just waiting for the bell that went on vacation.",
+    "I didn’t skip school, I was just in a classroom that forgot what time was.",
+    "I didn’t skip school, I was just doing the deluxe version of school hours.",
+    "I didn’t skip school, I was just stuck in a teacher monologue that lasted centuries.",
+    "I didn’t skip school, I was just attending the after‑after‑after school program.",
+    "I didn’t skip school, I was just waiting for dismissal like it was a rare boss drop.",
+    "I didn’t skip school, I was just trapped in a classroom that refused to release me.",
+    "I didn’t skip school, I was just experiencing the infinite school glitch.",
+    "I didn’t skip school, I was just stuck in a class that refused to release me into the wild.",
+    "I didn’t skip school, I was just waiting for the bell that forgot its job.",
+    "I didn’t skip school, I was just trapped in a lesson that turned into a whole season finale.",
+    "I didn’t skip school, I was just in a classroom that accidentally became a time loop.",
+    "I didn’t skip school, I was just attending school overtime like a dedicated employee.",
+    "I didn’t skip school, I was just stuck in a hallway that had no exit cutscene.",
+    "I didn’t skip school, I was just waiting for the teacher to stop talking since last week.",
+    "I didn’t skip school, I was just in a class that kept adding bonus rounds.",
+    "I didn’t skip school, I was just doing extended learning because the day wouldn’t end.",
+    "I didn’t skip school, I was just attending the ultra‑deluxe edition of school hours.",
+    "I didn’t skip school, I was just stuck in a lesson that had a surprise sequel.",
+    "I didn’t skip school, I was just waiting for dismissal like it was a rare achievement unlock.",
+    "I didn’t skip school, I was just trapped in a classroom that forgot how clocks work.",
+    "I didn’t skip school, I was just doing the extended cut of education.",
+    "I didn’t skip school, I was just stuck in a teacher monologue that lasted multiple eras.",
+    "I didn’t skip school, I was just attending the after‑school program’s after‑school program.",
+    "I didn’t skip school, I was just waiting for the bell that went missing in action.",
+    "I didn’t skip school, I was just in a classroom that accidentally became a survival challenge.",
+    "I didn’t skip school, I was just stuck in a lesson that refused to roll credits.",
+    "I didn’t skip school, I was just experiencing the legendary long‑day school event."
+];
 
-// Excuse 3
-console.log("That wasn't me, that was a deer in the house.");
-
-// Excuse 4
-console.log("That was my computer malfunctioning, not me.");
-// Excuse 5
-console.log("I wasn’t up late, I was waiting for you to say 'bedtime' a second time.");
-
-// Excuse 6
-console.log("I didn’t touch the remote, I was just checking if you were still watching.");
-
-// Excuse 7
-console.log("I wasn’t running, I was hurrying because you said 'come here' with urgency.");
-
-// Excuse 8
-console.log("I didn’t spill anything, I was testing if the cup was waterproof like you said.");
-
-// Excuse 9
-console.log("I wasn’t yelling, I was projecting my voice so you could hear me over your phone call.");
-
-// Excuse 10
-console.log("I didn’t leave the lights on, I left them for safety because you always say 'don’t trip'.");
-
-// Excuse 11
-console.log("I wasn’t sneaking snacks, I was checking if I needed to eat before dinner like you always ask me.");
-
-// Excuse 12
-console.log("I didn’t make the noise, I was investigating the noise so you wouldn’t have to get up.");
-// Excuse 13
-console.log("I wasn’t ignoring you, I thought you were talking to your phone again.");
-
-// Excuse 14
-console.log("I didn’t forget my chores, I was giving the broom a rest day.");
-
-// Excuse 15
-console.log("I wasn’t arguing, I was clarifying my innocence respectfully.");
-
-// Excuse 16
-console.log("I didn’t leave my shoes out, I placed them where I could find them fast for school.");
-
-// Excuse 17
-console.log("I wasn’t being loud, I was making sure you knew I was still alive.");
-
-// Excuse 18
-console.log("I didn’t lose my homework, it teleported to a safer location.");
-
-// Excuse 19
-console.log("I wasn’t procrastinating, I was waiting for the perfect moment to start.");
-
-// Excuse 20
-console.log("I didn’t forget to text you back, my brain had a loading screen.");
-
-// Excuse 21
-console.log("I wasn’t avoiding chores, I was letting you finish your sentence first.");
-
-// Excuse 22
-console.log("I didn’t leave the door open, I left it ‘parent inspection ready’.");
-
-// Excuse 23
-console.log("I wasn’t talking back, my voice just slipped out with extra confidence.");
+// Log everything
+familyExcuses.forEach(e => console.log(e));
+schoolExcuses.forEach(e => console.log(e));
 </script>
-<script>
-// Excuse 1
-console.log("I didn’t skip school, I was just at school for so long it felt like a second home.");
 
-// Excuse 2
-console.log("I didn’t skip school, I was just stuck in class until time forgot about me.");
-
-// Excuse 3
-console.log("I didn’t skip school, I was just in the building so long the teachers thought I worked there.");
-
-// Excuse 4
-console.log("I didn’t skip school, I was just trapped in a never‑ending lesson loop.");
-
-// Excuse 5
-console.log("I didn’t skip school, I was just waiting for the final bell that never came.");
-
-// Excuse 6
-console.log("I didn’t skip school, I was just attending bonus school hours nobody told me about.");
-
-// Excuse 7
-console.log("I didn’t skip school, I was just walking the halls until the halls got tired of me.");
-
-// Excuse 8
-console.log("I didn’t skip school, I was just stuck in a class that refused to end.");
-
-// Excuse 9
-console.log("I didn’t skip school, I was just doing extended learning against my will.");
-
-// Excuse 10
-console.log("I didn’t skip school, I was just waiting for a teacher who said ‘one more minute’ 47 times.");
-
-// Excuse 11
-console.log("I didn’t skip school, I was just in a meeting with the clock because it wasn’t moving.");
-
-// Excuse 12
-console.log("I didn’t skip school, I was just completing overtime education hours.");
-
-// Excuse 13
-console.log("I didn’t skip school, I was just stuck in the cafeteria time‑warp zone.");
-
-// Excuse 14
-console.log("I didn’t skip school, I was just waiting for dismissal like it was a rare event.");
-
-// Excuse 15
-console.log("I didn’t skip school, I was just in a class that turned into a trilogy.");
-
-// Excuse 16
-console.log("I didn’t skip school, I was just doing extra school because the day wouldn’t end.");
-
-// Excuse 17
-console.log("I didn’t skip school, I was just trapped in a lesson that had DLC content.");
-
-// Excuse 18
-console.log("I didn’t skip school, I was just stuck in a hallway side quest.");
-
-// Excuse 19
-console.log("I didn’t skip school, I was just waiting for the teacher to stop talking since yesterday.");
-
-// Excuse 20
-console.log("I didn’t skip school, I was just in a class that accidentally became a sleepover.");
-
-// Excuse 21
-console.log("I didn’t skip school, I was just attending the extended edition of school.");
-
-// Excuse 22
-console.log("I didn’t skip school, I was just stuck in a lesson that refused to end credits.");
-
-// Excuse 23
-console.log("I didn’t skip school, I was just waiting for the bell that went on vacation.");
-
-// Excuse 24
-console.log("I didn’t skip school, I was just in a classroom that forgot what time was.");
-
-// Excuse 25
-console.log("I didn’t skip school, I was just doing the deluxe version of school hours.");
-
-// Excuse 26
-console.log("I didn’t skip school, I was just stuck in a teacher monologue that lasted centuries.");
-
-// Excuse 27
-console.log("I didn’t skip school, I was just attending the after‑after‑after school program.");
-
-// Excuse 28
-console.log("I didn’t skip school, I was just waiting for dismissal like it was a rare boss drop.");
-
-// Excuse 29
-console.log("I didn’t skip school, I was just trapped in a classroom that refused to release me.");
-
-// Excuse 30
-console.log("I didn’t skip school, I was just experiencing the infinite school glitch.");
-// Excuse 31
-console.log("I didn’t skip school, I was just experiencing the infinite school glitch.");
-
-// Excuse 32
-console.log("I didn’t skip school, I was just stuck in a class that refused to release me into the wild.");
-
-// Excuse 33
-console.log("I didn’t skip school, I was just waiting for the bell that forgot its job.");
-
-// Excuse 34
-console.log("I didn’t skip school, I was just trapped in a lesson that turned into a whole season finale.");
-
-// Excuse 35
-console.log("I didn’t skip school, I was just in a classroom that accidentally became a time loop.");
-
-// Excuse 36
-console.log("I didn’t skip school, I was just attending school overtime like a dedicated employee.");
-
-// Excuse 37
-console.log("I didn’t skip school, I was just stuck in a hallway that had no exit cutscene.");
-
-// Excuse 38
-console.log("I didn’t skip school, I was just waiting for the teacher to stop talking since last week.");
-
-// Excuse 39
-console.log("I didn’t skip school, I was just in a class that kept adding bonus rounds.");
-
-// Excuse 40
-console.log("I didn’t skip school, I was just doing extended learning because the day wouldn’t end.");
-
-// Excuse 41
-console.log("I didn’t skip school, I was just attending the ultra‑deluxe edition of school hours.");
-
-// Excuse 42
-console.log("I didn’t skip school, I was just stuck in a lesson that had a surprise sequel.");
-
-// Excuse 43
-console.log("I didn’t skip school, I was just waiting for dismissal like it was a rare achievement unlock.");
-
-// Excuse 44
-console.log("I didn’t skip school, I was just trapped in a classroom that forgot how clocks work.");
-
-// Excuse 45
-console.log("I didn’t skip school, I was just doing the extended cut of education.");
-
-// Excuse 46
-console.log("I didn’t skip school, I was just stuck in a teacher monologue that lasted multiple eras.");
-
-// Excuse 47
-console.log("I didn’t skip school, I was just attending the after‑school program’s after‑school program.");
-
-// Excuse 48
-console.log("I didn’t skip school, I was just waiting for the bell that went missing in action.");
-
-// Excuse 49
-console.log("I didn’t skip school, I was just in a classroom that accidentally became a survival challenge.");
-
-// Excuse 50
-console.log("I didn’t skip school, I was just stuck in a lesson that refused to roll credits.");
-
-// Excuse 51
-console.log("I didn’t skip school, I was just experiencing the legendary long‑day school event.");
-</script>
+</body>
+</html>
